@@ -15,6 +15,13 @@ class BookRestClient {
         .toList();
   }
 
+  Future<Book> findById(int bookId) async {
+    Response response = await httpClient.get('$_bookResourceUrl/$bookId'); // adiciona ID na url para fazer a busca
+
+    Map<String, dynamic> bookJson = jsonDecode(response.body);
+    return Book.fromJson(bookJson);
+  }
+
   Future<Book> save(Book book) async {
     String bookJson = jsonEncode(book.toJson());
 
@@ -25,4 +32,6 @@ class BookRestClient {
     Map<String, dynamic> savedBookJson = jsonDecode(saveResponse.body);
     return Book.fromJson(savedBookJson);
   }
+
+
 }

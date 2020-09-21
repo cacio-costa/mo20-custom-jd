@@ -26,9 +26,7 @@ class LoggingInterceptor implements InterceptorContract {
   }
 }
 
-/**
- * ATENÇÃO: TROQUE PELO IP DA SUA MÁQUINA!
- */
+/// ATENÇÃO: TROQUE PELO IP DA SUA MÁQUINA!
 const String baseUrl = 'http://192.168.0.14:8080/api';
 
 HttpClientWithInterceptor httpClient = HttpClientWithInterceptor.build(

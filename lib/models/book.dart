@@ -10,6 +10,12 @@ class Book {
 
   Book(this.title, this.description, this.pages, this.releaseDate, this.authorId, this.categoryId, {this.id});
 
+
+  @override
+  String toString() {
+    return 'Book{id: $id, pages: $pages, authorId: $authorId, categoryId: $categoryId, title: $title, description: $description, releaseDate: $releaseDate}';
+  }
+
   Book.fromJson(Map<String, dynamic> json)
       : id = json['id'],
         pages = json['pages'],

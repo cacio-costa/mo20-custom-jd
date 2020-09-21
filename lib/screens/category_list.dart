@@ -104,6 +104,5 @@ class _CategoryItem extends StatelessWidget {
         ),
       ),
     );
-    ;
   }
 }

@@ -1,9 +1,5 @@
-import 'package:casadocodigoapp/models/author.dart';
 import 'package:casadocodigoapp/models/book.dart';
-import 'package:casadocodigoapp/models/category.dart';
-import 'package:casadocodigoapp/rest/author_rest_client.dart';
 import 'package:casadocodigoapp/rest/book_rest_client.dart';
-import 'package:casadocodigoapp/rest/category_rest_client.dart';
 import 'package:flutter/material.dart';
 
 class BookForm extends StatelessWidget {

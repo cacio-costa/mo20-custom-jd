@@ -102,6 +102,5 @@ class _BookItem extends StatelessWidget {
         ),
       ),
     );
-    ;
   }
 }
