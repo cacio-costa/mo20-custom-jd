@@ -64,7 +64,7 @@ class CategoryForm extends StatelessWidget {
       Category savedCategory = await categoryRestClient.save(newCategory);
       if (savedCategory != null) {
         debugPrint('*** CategoryForm -> Create -> category saved ***');
-        Navigator.pop(context);
+        Navigator.pop(context, savedCategory);
       } else {
         debugPrint('*** CategoryForm -> Create -> error on save category ***');
       }
