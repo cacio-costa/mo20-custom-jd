@@ -4,10 +4,10 @@ import 'package:casadocodigoapp/screens/category_list.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(CasaDoCodigoApp());
 }
 
-class MyApp extends StatelessWidget {
+class CasaDoCodigoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

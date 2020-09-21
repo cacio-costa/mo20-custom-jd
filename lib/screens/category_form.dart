@@ -75,7 +75,7 @@ class CategoryForm extends StatelessWidget {
     return title != null
         && title.trim().isNotEmpty
         && description != null
-        && title.trim().isNotEmpty;
+        && description.trim().isNotEmpty;
   }
 
 }
