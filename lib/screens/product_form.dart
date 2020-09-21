@@ -13,7 +13,7 @@ class ProductForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('New book'),
+        title: Text('New product'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

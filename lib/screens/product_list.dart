@@ -18,7 +18,7 @@ class _ProductListState extends State<ProductList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Books'),
+        title: Text('Products'),
       ),
       body: FutureBuilder<List<Product>>(
         future: productRestClient.findAll(),
