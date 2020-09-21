@@ -11,14 +11,14 @@ class ProductList extends StatefulWidget {
 }
 
 class _ProductListState extends State<ProductList> {
-  // Cliente para recuperar os autores
+  // Cliente para recuperar os produtos
   final ProductRestClient productRestClient = ProductRestClient();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Books'),
+        title: Text('Products'),
       ),
       body: FutureBuilder<List<Product>>(
         future: productRestClient.findAll(),
